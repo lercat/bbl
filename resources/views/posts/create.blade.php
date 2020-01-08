@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
    <form action="/p" enctype="multipart/form-data" method="post">
-    @csrf
+      @csrf
         <div class="row">
             <div class="col-8 offset-2">
 
@@ -17,6 +17,7 @@
                         type="text" 
                         class="form-control @error('legende') is-invalid @enderror" 
                         name="legende"
+                        legende="legende"
                         value="{{ old('legende') }}" 
                         required autocomplete="legende" autofocus>
                         

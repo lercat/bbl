@@ -23,14 +23,11 @@ class PostsController extends Controller
         $data = request()->validate([
             'legende' => 'required',
             'description' => 'required',
-            'image' => ['required','image'],
+            'image' => ['required', 'image'],
         ]);
-
-        request('image')->store('uploads', 'public');
-        
-        auth()->user()->posts()->create($data);
-
-
         dd(request()->all());
     }
 }
+
+
+
