@@ -17,7 +17,6 @@
                         type="text" 
                         class="form-control @error('legende') is-invalid @enderror" 
                         name="legende"
-                        legende="legende"
                         value="{{ old('legende') }}" 
                         required autocomplete="legende" autofocus>
                         

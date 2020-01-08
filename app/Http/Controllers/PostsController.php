@@ -7,11 +7,10 @@ use Illuminate\Http\Request;
 class PostsController extends Controller
 {
 
-    public function __construc()
+    public function __construct()
     {
         $this->middleware('auth');
     }
-
 
     public function create()
     {
@@ -25,6 +24,10 @@ class PostsController extends Controller
             'description' => 'required',
             'image' => ['required', 'image'],
         ]);
+
+        auth()->user()->posts()->create($data);
+       
+
         dd(request()->all());
     }
 }
