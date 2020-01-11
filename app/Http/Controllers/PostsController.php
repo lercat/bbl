@@ -25,10 +25,16 @@ class PostsController extends Controller
             'image' => ['required', 'image'],
         ]);
 
-        auth()->user()->posts()->create($data);
+        $imagePath = request('image')->store('uploads', 'public');
+
+        auth()->user()->posts()->create([
+            'legende' => $data['legende'],
+            'description' => $data['description'],
+            'image' => $imagePath,
+        ]);
        
 
-        dd(request()->all());
+        return redirect('/profile/' .auth()->user()->id);
     }
 }
 
