@@ -11,7 +11,7 @@
 
 <!-- Un nouveau profil tout neuf -->
                 <div class="row">
-                    <h1>Modifier un Profil </h1>
+                    <h1>Modification de mon Profil </h1>
                 </div>        
 
                 <div class="form-group row">
@@ -66,7 +66,7 @@
                 </div>
 
 
-<!-- l'image du profile' -->
+<!-- l'image du profile' à rajouter - erreur sur ma page de profil -->
                 <div class="row">
                     <label for="image" class="col-md-4 col-form-label">Image du Profil</label>
                     <input type="file" class="form-control-file" id="image" name="image">
