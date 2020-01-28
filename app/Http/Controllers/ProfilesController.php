@@ -15,16 +15,18 @@ class ProfilesController extends Controller
 
     public function edit(User $user)
     {
+        $this->authorize('update', $user->profile);
         return view('profiles.edit', compact('user'));
     }
 
     public function update(User $user)
     {
+        $this->authorize('update', $user->profile);
         $data = request()->validate([
             'titre' => 'required',
             'description' => 'required',
             'url' => 'url',
-           'image' => '', //['required', 'image']
+            'image' => '', //['required', 'image']
         ]);
 
         auth()->user()->profile->update($data);
