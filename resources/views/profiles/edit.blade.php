@@ -66,7 +66,6 @@
                 </div>
 
 
-<!-- l'image du profile' à rajouter - erreur sur ma page de profil -->
                 <div class="row">
                     <label for="image" class="col-md-4 col-form-label">Image du Profil</label>
                     <input type="file" class="form-control-file" id="image" name="image">

@@ -2,9 +2,8 @@
 
 @section('content')
 <div class="container">
-   <form action="/profile/{{ $user->id }}" enctype="multipart/form-data" method="post">
+   <form action="/p" enctype="multipart/form-data" method="post">
       @csrf
-      @method('PATCH')
         <div class="row">
             <div class="col-8 offset-2">
 
