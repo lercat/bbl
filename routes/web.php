@@ -18,6 +18,9 @@ Route::get('/', function() {
 
 Auth::routes();
 
+Route::get('/welcome', 'HomeController@index');
+
+
 Route::post('follow/{user}', 'FollowsController@store');
 
 Route::get('/p/create', 'PostsController@create');
