@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    BeerBlogLaravel
+                    WorldBeerBlog
                 </div>
                 <div>
                     <h2>Quoi de mieux qu'une petite mousse pour se détendre</>
