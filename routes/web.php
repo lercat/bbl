@@ -11,11 +11,12 @@
 |
 */
 
-//Route::get('/welcome','HomeController@index');
+// Route::get('/welcome','HomeController@index');
 
 // Route::get('/', function (){
 //     return view('welcome');
 // });
+
 
 
 Auth::routes();
@@ -33,4 +34,5 @@ Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edi
 Route::patch('/profile/{user}', 'ProfilesController@update')->name('profile.update');
 
 
-
+Route::view('/contact', 'contact');
+Route::view('/ml', 'ml');

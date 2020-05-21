@@ -88,8 +88,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Contact</a>
+                    <a href="ml">Mentions légales</a>
+                    <a href="contact">Contact</a>
                     <a href="#">GitHub</a>
                 </div>
             </div>
